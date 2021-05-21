@@ -1,11 +1,11 @@
 // API key (for illustration only, you should store production key in an environment variable)
-var mondayAPIkey = "YOUR_API_KEY_HERE";
+var mondayAPIkey = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjExMDg1MTExMiwidWlkIjoyMTk5OTE4MywiaWFkIjoiMjAyMS0wNS0yMVQwMjo1MDozMC40NTFaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6ODk1MDAzMSwicmduIjoidXNlMSJ9.yf9yR035I7CmUCTickmmti0dp7Vuwb7gacMGCb2_Adc";
 
 // ID of destination board
-var boardID = 392204356; // change this :)
+var boardID = 1313124495; // change this :)
 
 // list that stores the column IDs of the monday.com columns to be updated (ordered left to right)
-var colMappings = ["name", "text", "text0", "status9", "date3"]; // change this :)
+var colMappings = ["name", "phone", "email", "address", "message"]; // change this :)
 
 function makeAPICall(key, query, variables) {
   var url = "https://api.monday.com/v2";
